@@ -1,5 +1,3 @@
-[![Gitter chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lennylxx/ipv6-hosts)
-
 What
 ----
 
@@ -13,6 +11,8 @@ Facebook, Wikipedia, etc. in Mainland China.
 | Info  | [1e100 servers deployment geoinfo], [SN-domain servers list]       |
 
 * You may need [HTTPS Everywhere] to secure your transmission.
+* [How to decode Google SN domains]
+* How to [Do It Yourself]
 
 Scripts
 -------
@@ -21,13 +21,13 @@ Scripts
 
 ```
 usage: update_hosts [OPTIONS] FILE
-A simple multi-threading tool used to update hosts file.
+A simple multi-threading tool used for updating hosts file.
 
 Options:
   -h, --help             show this help message and exit
   -s DNS                 set another dns server, default: 2001:4860:4860::8844
-  -o OUT_FILE            ouput file, default: inputfilename.out
-  -t QUERY_TYPE          dig command query type, defalut: aaaa
+  -o OUT_FILE            output file, default: inputfilename.out
+  -t QUERY_TYPE          dig command query type, default: aaaa
   -c, --cname            write canonical name into hosts file
   -n THREAD_NUM          set the number of worker threads, default: 10
 ```
@@ -57,12 +57,12 @@ Some Public DNS Servers
 | ISP      | Hutchison Whampoa Ltd. | UCOM Corporation   |
 | City     | Hong Kong              | Tokyo              |
 
-More public DNS servers please refer to http://public-dns.tk
+More public DNS servers please refer to http://public-dns.info
 
 Privacy
 -------
 
-* The hosts file just redirect domain to its offical IPs. You can check them on any public DNS servers.
+* The hosts file just redirects domain to its official IPs. You can check them on any other public DNS servers.
 * There is no absolute privacy on the Internet. Learn to protect yourself.
 * Act smart.
 
@@ -78,5 +78,7 @@ Content of this project (including hosts files, wiki, and Google sheets) is lice
 [1e100 servers deployment geoinfo]: https://docs.google.com/spreadsheets/d/1a5HI0lkc1TycJdwJnCVDVd3x6_gemI3CQhNHhdsVmP8
 [SN-domain servers list]: https://docs.google.com/spreadsheets/d/14gT1GV1IE0oYCq-1Dy747_5FWNxL26R-9T5htJ485dY
 [HTTPS Everywhere]: https://www.eff.org/https-everywhere
+[How to decode Google SN domains]: https://github.com/lennylxx/ipv6-hosts/wiki/sn-domains
+[Do It Yourself]: https://github.com/lennylxx/ipv6-hosts/wiki/Do-It-Yourself
 [CC Image]: https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png
 [CC BY-NC-SA 3.0]: https://creativecommons.org/licenses/by-nc-sa/3.0/
